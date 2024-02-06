@@ -27,7 +27,7 @@ public class HoursWorked_v2 {
         int desiredID = console.nextInt();
         boolean found = false;
 
-        Scanner input = new Scanner(new File("hours.txt"));
+        Scanner input = new Scanner(new File("FileProcessingExamples/hours.txt"));
 
         while (input.hasNextLine()) {
             // process one employee

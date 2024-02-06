@@ -16,7 +16,7 @@ import java.util.*;
 
 public class HoursWorked {
     public static void main(String[] args) throws FileNotFoundException {
-        Scanner input = new Scanner(new File("hours.txt"));
+        Scanner input = new Scanner(new File("FileProcessingExamples/hours.txt"));
 
         while (input.hasNextLine()) {
             // process one employee
