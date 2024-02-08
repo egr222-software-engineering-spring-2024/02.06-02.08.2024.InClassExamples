@@ -45,11 +45,9 @@ public class Main {
         int xFootballBottomRight = 210;
         int yFootballBottomRight = 230;
 
-//        g.drawLine(xFootballTopLeft,yFootballTopLeft,xFootballBottomRight,yFootballTopLeft); // draw top border
-//        g.drawLine(xFootballTopLeft,yFootballTopLeft,xFootballTopLeft,yFootballBottomRight); // left border
-//        g.drawLine(xFootballBottomRight,yFootballTopLeft,xFootballBottomRight,yFootballBottomRight); // right border
-//        g.drawLine(xFootballTopLeft,yFootballBottomRight,xFootballBottomRight,yFootballBottomRight); // bottom border
-
+        // draw 21 lines (which includes all four borders
+        // …the first lines (where i=0) are the left and bottom borders
+        // …the last two lines (where i=20) are the top and right borders
         for (int i = 0 ; i < 21 ; i ++ ) {
             g.drawLine(xFootballTopLeft, yFootballBottomRight - 10 * i, xFootballTopLeft + 10 * i, yFootballTopLeft);
             g.drawLine(xFootballTopLeft + i * 10, yFootballBottomRight, xFootballBottomRight, yFootballBottomRight - i * 10);
